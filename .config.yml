@@ -1,0 +1,8 @@
+kollus:
+  domain: [kollus domain]
+  version: 0
+  service_account:
+    key : [service account key]
+    api_access_token: [api access token]
+    custom_key: [custom key]
+
