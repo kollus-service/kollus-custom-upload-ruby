@@ -5,11 +5,11 @@ Upload media by Kollus Http-endpoint API : Sample Source
 ## Requirement
 
 * [ruby](https://www.ruby-lang.org/) : 2.0 above
-  * module
-    * [sinatra](http://www.sinatrarb.com/) : for smaple code's web framework
-    * [sinatra-contrib](http://www.sinatrarb.com/contrib/)
+   * module
+      * [sinatra](http://www.sinatrarb.com/) : for smaple code's web framework
+      * [sinatra-contrib](http://www.sinatrarb.com/contrib/)
 * [jQuery](https://jquery.com) : 3.2.1
-  * [Kollus Custom Upload By jQuery](https://github.com/kollus-service/kollus-custom-upload-jquery) library
+   * [Kollus Custom Upload By jQuery](https://github.com/kollus-service/kollus-custom-upload-jquery) library
 * [Boostrap](https://getbootstrap.com/docs/3.3/) : for smaple code
   
 ## Installation
@@ -18,7 +18,7 @@ Upload media by Kollus Http-endpoint API : Sample Source
 git clone https://github.com/kollus-service/kollus-custom-upload-ruby
 cd kollus-custom-upload-ruby
 
-bundler install
+bundle install
 ```
 Copy .config.yml to config.yml and Edit this.
 

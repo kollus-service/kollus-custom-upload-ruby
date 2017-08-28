@@ -41,7 +41,8 @@ post '/api/upload/create_url' do
   data = kollus_api_client.upload_url_response(
     category_key: params['category_key'],
     use_encryption: params['use_encryption'],
-    is_audio_upload: params['is_audio_upload']
+    is_audio_upload: params['is_audio_upload'],
+    title: params['title']
   )
   content_type :json, 'charset' => 'utf-8'
   data.to_json
@@ -66,13 +67,4 @@ get '/api/upload_file' do
     items: items,
     auto_reload: auto_reload
   }.to_json
-end
-
-get '/api/channel/media_content' do
-  # @type [KollusApiClient] kollus_api_client
-  kollus_api_client = settings.kollus_api_client
-
-  data = kollus_api_client.find_channel_media_contents(channel_key: 'i3qubh48')
-
-  data[:items][0].category.class
 end
