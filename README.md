@@ -6,11 +6,11 @@ Upload media by Kollus Http-endpoint API : Sample Source
 
 * [ruby](https://www.ruby-lang.org/) : 2.0 above
    * module
-      * [sinatra](http://www.sinatrarb.com/) : for smaple code's web framework
+      * [sinatra](http://www.sinatrarb.com/) : for sample code's web framework
       * [sinatra-contrib](http://www.sinatrarb.com/contrib/)
 * [jQuery](https://jquery.com) : 3.2.1
    * [Kollus Custom Upload By jQuery](https://github.com/kollus-service/kollus-custom-upload-jquery) library
-* [Boostrap](https://getbootstrap.com/docs/3.3/) : for smaple code
+* [Boostrap](https://getbootstrap.com/docs/3.3/) : for sample code
   
 ## Installation
 
@@ -47,22 +47,23 @@ ruby app.rb
 
 Open browser '[http://localhost:4567](http://localhost:4567)'
 
-## If you use modern browser
+## You must use modern browser
 
 * IE 10 above and other latest browser is best
 * Don't use 'iframe upload' and 'kollus progress api'
 
 ## Development flow
-1. Reqeust local server api for create 'upload url' on browser
+1. Request local server api for create 'upload url' on browser
    * '/api/upload/create_url' in app.rb 
-2. Local server call kollus api and create kollus 'upload url'
+2. Local server call kollus api and create 'kollus upload url'
    * use upload_url_response in lib/kollus_api_client.rb
-3. Upload file to kollus 'upload url'
+3. Upload file to 'kollus upload url'
    * use upload-file event in public/js/default.js
 
 ### Important code
 
 app.rb
+
 ```ruby
 post '/api/upload/create_url' do
   # @type [KollusApiClient] kollus_api_client
@@ -78,6 +79,7 @@ end
 ```
 
 lib/kollus_api_client.rb
+
 ```ruby
   # upload_url_response
   #
@@ -109,6 +111,7 @@ lib/kollus_api_client.rb
 ```
 
 public/js/default.js
+
 ```javascript
 /**
  * Kollus Upload JS by JQuery

@@ -25,3 +25,4 @@ div.flashes div.alert-dismissible {
 th.upload-file-key { width: 150px; }
 th.transcoding-stage { width: 150px; }
 th.created-at { width: 200px; }
+th.action { width: 150px; }
